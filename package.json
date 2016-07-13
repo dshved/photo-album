@@ -10,7 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.13.0",
-    "gulp": "gulpjs/gulp#4.0",
+    "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-cheerio": "^0.6.2",
     "gulp-cli": "github:gulpjs/gulp-cli#4.0",
@@ -30,5 +30,14 @@
     "gulp-svgmin": "^1.2.2",
     "highlight.js": "^9.4.0",
     "rimraf": "^2.5.2"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dshved/photo-album.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dshved/photo-album/issues"
+  },
+  "homepage": "https://github.com/dshved/photo-album#readme"
 }
