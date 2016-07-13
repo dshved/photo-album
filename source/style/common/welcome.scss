@@ -1,0 +1,122 @@
+.icon-fill {
+  fill: #cccccc;
+}
+
+.welcome {
+  &__header {
+    color: #fff;
+    font-family: "Panton-Bold";
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+  &__desc {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  &__copyright {
+    color: #fff;
+    padding-bottom: 20px;
+  }
+}
+
+.bg {
+  background: url('../img/bg.jpg') no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 550px;
+}
+
+.icon-fill {}
+
+.form {
+  width: 280px;
+  border-radius: 20px;
+  background-color: #FFF;
+  padding: 0 0 10px;
+  &__input {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 10px 20px;
+    input {
+      margin-left: 10px;
+      width: 100%;
+      border: none;
+      outline: none;
+    }
+    &_border-top {
+      border-top: 1px solid #d6d6d6;
+    }
+  }
+  &__btn {
+    background-color: $btn-blue-color;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-family: "Panton-Bold";
+    font-size: 14px;
+    display: block;
+    width: 240px;
+    padding: 15px 0;
+    cursor: pointer;
+    margin: 12px 20px;
+    &:hover {
+      background-color: $btn-blue-hover-color;
+    }
+  }
+  &__link {
+    opacity: .8;
+    color: $btn-blue-color;
+    font-family: "ProximaNova-Semibold";
+    font-size: 14px;
+    font-weight: bold;
+    &_reset {
+      display: block;
+      margin: 12px 20px;
+    }
+    &:hover {
+      color: $btn-blue-hover-color;
+    }
+  }
+  &__title {
+    margin: 12px 20px;
+    color: #323232;
+    font-family: "ProximaNova-Semibold";
+    font-size: 14px;
+    font-weight: bold;
+  }
+  &__desc {
+    font-size: 14px;
+    margin: 12px 20px;
+    color: $gray-color;
+  }
+  &__text {
+    font-size: 14px;
+    text-align: center;
+    color: $gray-color
+  }
+  &__error {
+    display: none;
+    margin: 0 20px;
+    border-radius: 3px;
+    padding: 12px 20px;
+    background-color: $error-color;
+  }
+}

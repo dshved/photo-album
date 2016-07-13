@@ -1,0 +1,23 @@
+-var title = "Регистрация"
+include common/_head
+body
+  .wrapper.bg
+    .form-container
+      .welcome__header Регистрация
+      .form
+        form(action="#" method="post").form-register
+          .form__input
+            +icon('name', 16,'icon-fill')
+            input(type="text" name="username" placeholder="Имя")
+          .form__input
+            +icon('envelope', 16,'icon-fill')
+            input(type="email" name="email" placeholder="Электронная почта")
+          .form__input
+            +icon('password', 16,'icon-fill')
+            input(type="password" name="password" placeholder="Пароль")
+          .form__desc Ваши данные остаются строго конфеденциальны
+          .form__error Email или пароль неверен
+          input.form__btn(type="submit" value="Создать аккаунт")
+          .form__text Уже зарегистрированы? 
+            a.form__link(href="/") Войти
+    .welcome__copyright 2016 Создано командой профессионалов на продвинутом курсе по веб-разработке от LoftSchool

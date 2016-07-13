@@ -1,0 +1,18 @@
+-var title = "Восстановление пароля"
+include common/_head
+body
+  .wrapper.bg
+    .form-container
+      .welcome__header Восстановление пароля
+      .form
+        form(action="#" method="post").form-forget
+          .form__title Забыли пароль
+          .form__desc Ничего страшного, введите свой e-mail, и мы вышлем вам инструкции по востановлению пароля
+          .form__input.form__input_border-top
+            +icon('envelope', 16,'icon-fill')
+            input(type="email" name="email" placeholder="Электронная почта")
+          .form__error Email или пароль неверен
+          input.form__btn(type="submit" value="Восстановить пароль")
+          .form__text Вспомнили пароль? 
+            a.form__link(href="/") Войти
+    .welcome__copyright 2016 Создано командой профессионалов на продвинутом курсе по веб-разработке от LoftSchool
