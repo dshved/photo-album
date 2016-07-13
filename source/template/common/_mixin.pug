@@ -1,5 +1,0 @@
-mixin icon(name, size, mod)
-  - mod = mod || ''
-  - size = size || ''
-  svg(class="icon icon-" + name + ' ' + 'icon-'+ size +' ' + mod)
-    use(xlink:href="assets/img/sprite.svg#" + name)
