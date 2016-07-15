@@ -1,0 +1,19 @@
+header.header
+  .header_bg
+    img(src="assets/img/footer.jpg", alt="")
+  .container
+    
+    .header_panel
+      .user-img
+        img(src="assets/img/user-header.jpg", alt="")
+      .user-info
+        .user-name Антон Черепов
+        .user-desc Я веб разработчик. Мне 24 года. Люблю путешествия, кодинг, фриланс и активный отдых.
+        .user-social social icon
+      .controls
+        a(href="#") Редактировать
+        a(href="#") Выйти
+  .header_search
+    .header_search-inner
+      +icon('search',16, 'gray')
+      input.header_input(type="text" placeholder="Исследовать мир")

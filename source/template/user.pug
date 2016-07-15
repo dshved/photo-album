@@ -1,0 +1,41 @@
+-var title = "Имя пользователя"
+include common/_head
+include common/_header
+.wrap
+  section.news
+    .title Новое в мире
+    ul.photos_list
+      -var name_photos = ['Путешествие на лодке по озеру','Отдых в палатке','Любимые лошадки','Мечтательный взгляд вдаль пове...']
+      each name in name_photos
+        li.photos_item
+          .photos_img
+            img(src="assets/img/album-1.jpg", alt="Нет фото")
+          .photos_about
+            .photos_user-img
+              img(src="assets/img/user.jpg", alt="Нет фото")
+            .photos_desc
+              .photos_title= name
+              .photos_social-acitve
+                a.photos_comment(href="#")
+                  +icon('comments', 16, 'gray')
+                  | 9
+                a.photos_likes(href="#")
+                  +icon('like', 16, 'gray')
+                  | 15
+          a(href="#").photos_album-name
+            +icon('album', 16, 'gray')
+            | Прогулки по воде
+    .more-photos
+      a.btn.btn_more(href="#") Показать больше
+  section.albums
+    .title Мои альбомы
+    ul.albums_list
+      each name in name_photos
+        li.albums_item
+          .albums_img
+            img(src="assets/img/album-1.jpg", alt="")
+          .albums_edit
+            a(href="#")
+              +icon('edit', 16, 'gray')
+            .albums_desc= name
+include common/_footer

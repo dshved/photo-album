@@ -1,0 +1,31 @@
+-var title = "Поиск"
+include common/_head
+.wrap
+  header.search
+    .search_title
+      .search_text Исследуй мир
+      a(href="#").search_home
+        +icon('home', 16)
+    .users
+      .user-img
+        img(src="", alt="")
+      .user-name Антон Черепов
+      .input-searh
+        +icon('search', 16)
+        input(type="search" placeholder="Исследовать мир")
+      a.new-searsh(href="#") Показать новые
+  main.main
+    h2 По запросу "Природа" найдено 6 результатов
+    .result-container
+      ul.result_list
+        li.result_item
+          .result_img
+            img(src="assets/img/result_img.jpg", alt="")
+          .result_desc
+            .desc_user
+              img(src="assets/img/result_user.jpg", alt="")
+            .desc_title Путешествие на лодке по озеру
+              .commit 9
+              .likes 15
+          .result_name-album Прогулки по воде
+

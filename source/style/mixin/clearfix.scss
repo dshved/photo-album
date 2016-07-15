@@ -18,3 +18,10 @@
   bottom: 0;
   margin: auto;
 }
+
+@mixin gray-fonts {
+  opacity: .8;
+  color: $text-gray;
+  font-family: $proxima;
+  font-size: 16px;
+}

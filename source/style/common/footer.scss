@@ -1,0 +1,43 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  align-items: center;
+  background-color: rgba(#000, .8);
+  &_bg {
+    position: absolute;
+    height: 75px;
+    overflow: hidden;
+    width: 100%;
+    z-index: -1;
+    img {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+  &_desc {
+    padding-left: 20px;
+  }
+  &_copyright {
+    padding-right: 20px;
+  }
+  &_desc,
+  &_copyright {
+    color: #fff;
+    font-family: $proxima;
+  }
+  &_up {
+    margin: 0 100px;
+    transition: all .3s;
+    svg {
+      fill: rgba(#fff, .5);
+    }
+    &:hover svg {
+      fill: rgba(#fff, .9);
+    }
+  }
+}
